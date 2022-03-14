@@ -1,0 +1,21 @@
+using System;
+
+public class Test3
+{
+    public static void Main(string[] args)
+    {
+        int eded = 123;
+        int kok = 0;
+        for(int i = 1;i <= eded;i++){
+            if(i*i<=eded){
+                kok = i;
+            }
+        }
+        if(eded == 0){
+           Console.WriteLine("Eded 0 dir"); 
+        }
+        else{
+        Console.WriteLine(kok);
+        }
+    }
+}

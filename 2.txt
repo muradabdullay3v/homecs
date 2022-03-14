@@ -1,0 +1,17 @@
+using System;
+
+public class Test2
+{
+    public static void Main(string[] args)
+    {
+        int n = 4;
+        int m = 60;
+        int counter = 0;
+        for(int i = n;i<=m;i++){
+            if(i%15==0){
+                counter++;
+            }
+        }
+        Console.WriteLine(counter);
+    }
+}
