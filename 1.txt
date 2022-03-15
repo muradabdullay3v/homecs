@@ -4,12 +4,18 @@ public class Test1
 {
     public static void Main(string[] args)
     {
-        int[] arr = {5,29,41,88,61,0,11,56,65,28,17};
+        int[] arr = {5,29,41,88,61,0,11,56,65,28,17,123,52};
         int counter = 0;
-        for(int i = 0;i<arr.Length;i++){
-            if(arr[i]%10 + arr[i]/10 <10){
+        int sum = 0;
+        for(int i = 0;i < arr.Length; i++){
+            while(arr[i] > 0){
+                sum = sum + arr[i] % 10;
+                arr[i] = arr[i] / 10;
+            }
+            if(sum < 10){
                 counter++;
             }
+            sum = 0;
         }
         Console.WriteLine(counter);
     }
